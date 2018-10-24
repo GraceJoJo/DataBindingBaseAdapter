@@ -54,4 +54,4 @@ class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean
 (2)在Adapter中可以省略大量重复的设置数据的代码<p>
 (3)使得代码更加简洁，一目了然，易于维护。
 
-致谢：鸿洋大神的[BaseAdapter](https://github.com/hongyangAndroid/baseAdapter)
+<p>致谢：鸿洋大神的[BaseAdapter](https://github.com/hongyangAndroid/baseAdapter)
