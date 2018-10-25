@@ -33,6 +33,14 @@ class ADA_RecyclerItem constructor(context: Context): CommonAdapter<DataBean, It
     }
 }
 ```
+Activity或Fragment使用：
+```
+        val dataList= ArrayList<DataBean>() //模拟数据
+        recyclerview.layoutManager = LinearLayoutManager(this)
+        var mAdapter = ADA_RecyclerItem(this)
+        recyclerview.adapter = mAdapter
+        mAdapter.update(dataList,true)
+```
 
 (2)ListView或者GridView的Adapter
 ```
@@ -47,7 +55,13 @@ class ADA_ListItem constructor(context: Context): CommonAdapterListView<DataBean
     }
 }
 ```
-
+Activity或Fragment使用：
+```
+        val dataList= ArrayList<DataBean>() //模拟数据
+        var mAdapter = ADA_ListItem(this)
+        listview.adapter = mAdapter
+        mAdapter.update(dataList,true)
+```
 《二》实现效果：<p>
 ![image](https://upload-images.jianshu.io/upload_images/3828835-b45fc454c54187ee.gif?imageMogr2/auto-orient/strip)<p>
 《三》优点：<p>
